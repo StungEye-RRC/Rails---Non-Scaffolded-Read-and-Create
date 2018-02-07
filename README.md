@@ -1,24 +1,5 @@
-# README
+# Rails - Non-Scaffolded Read and Create
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The C and the R of CRUD built without scaffolding.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+View: [Associated Video Lecture](https://youtu.be/-numUlnZZw4)
