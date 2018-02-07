@@ -1,2 +1,21 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<h2>Add A Product</h2>
+
+<%= form_for @product, remote: false do |f| %>
+  <% if @product.errors.any? %>
+    <h2><%= pluralize(@product.errors.size, 'error') %> prevented this product from being saved:</h2>
+    <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= f.label :title %>
+  <%= f.text_field :title %><br>
+  <%= f.label :description %>
+  <%= f.text_area :description %><br>
+  <%= f.label :stock_quantity %>
+  <%= f.text_field :stock_quantity %><br>
+  <%= f.label :price %>
+  <%= f.text_field :price %><br>
+  <%= f.submit %>
+<% end %>
